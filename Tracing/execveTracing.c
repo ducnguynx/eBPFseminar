@@ -42,7 +42,7 @@ int main()
 	err = execveTracing_bpf__attach(skel);
 	if (err) {
 		fprintf(stderr, "Failed to attach BPF skeleton: %d\n", err);
-		execveTracing__destroy(skel);
+		execveTracing_bpf__destroy(skel);
         return 1;
 	}
 
@@ -50,7 +50,7 @@ int main()
 	if (!pb) {
 		err = -1;
 		fprintf(stderr, "Failed to create ring buffer\n");
-		execveTracing__destroy(skel);
+		execveTracing_bpf__destroy(skel);
         return 1;
 	}
 
@@ -68,6 +68,6 @@ int main()
 	}
 
 	perf_buffer__free(pb);
-	execveTracing__destroy(skel);
+	execveTracing_bpf__destroy(skel);
 	return -err;
 }
