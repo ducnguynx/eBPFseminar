@@ -1,4 +1,4 @@
-# eBPFseminar
+# eBPF Sensor Lab Seminar
 Source code for all the demos in the seminar  
 ### Notes
 First, go to countpackets directory to install needed packages. After that, come back here, clone this repo & install libbpf 
