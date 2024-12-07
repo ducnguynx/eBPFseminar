@@ -1,9 +1,9 @@
 # countpackets
 An XDP eBPF program to count how many Wi-Fi packets have arrived in 10 seconds
 ## Dependencies
-Working with 5.15 & upstream mainline kernel\\
+Working with 5.15 & upstream mainline kernel
 ### My setup
-[Ubuntu 22.04 LTS Desktop Image](https://releases.ubuntu.com/jammy/)\\
+[Ubuntu 22.04 LTS Desktop Image](https://releases.ubuntu.com/jammy/)  
 [VMware Workstation 17 pro](https://blogs.vmware.com/workstation/2024/05/vmware-workstation-pro-now-available-free-for-personal-use.html)\\
 ### Needed packages
 [airmon-ng](https://github.com/aircrack-ng/aircrack-ng) for getting your Wi-Fi NIC to Monitor Mode\\
