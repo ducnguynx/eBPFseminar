@@ -25,7 +25,7 @@ Run
 sudo ./execveTracing
 ```
 ## Contributing
-This project is adapt from Liz Rice's example in chapter 5 of [learning eBPF](https://github.com/lizrice/learning-ebpf)
+This project is adapted from Liz Rice's example in chapter 5 of [learning eBPF](https://github.com/lizrice/learning-ebpf)
 ## License
 This work is dual-licensed under BSD 2-clause license and GNU LGPL v2.1 license.
 You can choose between one of them if you use this work.
