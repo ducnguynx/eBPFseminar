@@ -13,7 +13,7 @@ sudo apt install -y zip bison build-essential cmake flex git libedit-dev \
   liblzma-dev libdebuginfod-dev arping netperf iperf
 ```
 [libbpf](https://github.com/libbpf/libbpf) & [bpftool](https://github.com/libbpf/bpftool)  
-[BCC framework](https://github.com/iovisor/bcc/blob/master/INSTALL.md). BUILD IT FROM SOURCE TO AVOID BUGS. Actually there are many ways to get the system up and running, but I prefer install BCC framework for simplicity
+[BCC framework](https://github.com/iovisor/bcc/blob/master/INSTALL.md). BUILD IT FROM SOURCE TO AVOID BUGS. Actually there are many ways to get the system up and running, but I prefer to install BCC framework for simplicity
 
 ## Usage
 Build the project
