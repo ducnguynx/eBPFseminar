@@ -16,7 +16,11 @@ static int libbpf_print_fn(enum libbpf_print_level level, const char *format, va
 void handle_event(void *ctx, int cpu, void *data, unsigned int data_sz)
 {
 	struct data_t *m = data;
-
+	// Filter out specific commands
+    	if (strcmp(m->path, "/usr/bin/df") == 0 || strcmp(m->path, "/usr/bin/who") == 0 || strcmp(m->path, "/usr/bin/sleep") == 0 || strcmp(m->path, "/usr/bin/head") == 0 || strcmp(m->path, "/usr/bin/tail") == 0) 
+    	{
+        return; // Skip printing for these commands
+    	}
 	printf("%-6d %-6d %-16s %-16s %s\n", m->pid, m->uid, m->command, m->path, m->message);
 }
 
